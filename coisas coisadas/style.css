@@ -10,16 +10,23 @@ font-size: 25px;
 text-transform: uppercase;
 }
 
-
-
-
 .registradores{
 display: flex;
 flex-direction: row;
-
-
 }
 
+.i5{
+  display: flex;
+  flex-direction: column;
+  margin-left: 167px;
+  margin-top: -760px;
+}
+.i3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 784px;
+  margin-top: 162px;
+}
 .eprom{
     display: flex;
     flex-direction: column;
@@ -117,3 +124,4 @@ flex-direction: row;
     margin-left: 840.3px;
     margin-top: -54px
   }
+
