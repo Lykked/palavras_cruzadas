@@ -14,29 +14,29 @@
         <div class="registradores">
             <input id="r1" type="text" maxlength="1" size="1">
             <input id="r2" type="text" maxlength="1" size="1">
-            <input id="r3"  type="text" maxlength="1" size="1">
-            <input id="r4"  type="text" maxlength="1" size="1">
-            <input id="r5"  type="text" maxlength="1" size="1">
-            <input id="r6"  type="text" maxlength="1" size="1">
-            <input id="r7"  type="text" maxlength="1" size="1">
+            <input id="r3" type="text" maxlength="1" size="1">
+            <input id="r4" type="text" maxlength="1" size="1">
+            <input id="r5" type="text" maxlength="1" size="1">
+            <input id="r6" type="text" maxlength="1" size="1">
+            <input id="r7" type="text" maxlength="1" size="1">
             <input id="r8" type="text" maxlength="1" size="1">
             <input id="r9" type="text" maxlength="1" size="1">
             <input id="r10" type="text" maxlength="1" size="1">
             <input id="r11" type="text" maxlength="1" size="1">
             <input id="r12" type="text" maxlength="1" size="1">
-            <input id="r13" type="text" maxlength="1" size="1">
+            <input id="r13" type="text" maxlength="1" size="1" onchange="func_r1()">
         </div>
-        
+
         <div class="eprom">
             <input id="e1" type="text" maxlength="1" size="1">
             <input id="e2" type="text" maxlength="1" size="1">
             <input id="e3" type="text" maxlength="1" size="1">
-            <input id="e4" type="text" maxlength="1" size="1">
+            <input id="e4" type="text" maxlength="1" size="1" onchange="func_e1()">
         </div>
 
         <div class="rom">
             <input id="rom1" type="text" maxlength="1" size="1">
-            <input id="rom2" type="text" maxlength="1" size="1">
+            <input id="rom2" type="text" maxlength="1" size="1" onchange="func_rom1()">
         </div>
 
         <div class="memoriademassa">
@@ -68,7 +68,7 @@
 
         <div class="flash">
             <input id="f1" type="text" maxlength="1" size="1">
-            <input id="f2" type="text" maxlength="1" size="1" >
+            <input id="f2" type="text" maxlength="1" size="1">
             <input id="f3" type="text" maxlength="1" size="1" style="margin-top: 57px;">
             <input id="f4" type="text" maxlength="1" size="1">
         </div>
@@ -85,52 +85,52 @@
         <div class="cpu">
             <input id="cpu1" type="text" maxlength="1" size="1">
             <input id="cpu2" type="text" maxlength="1" size="1">
-    </div>
+        </div>
 
-    <div class="quadcore">
-        <input id="q1" type="text" maxlength="1" size="1">
-        <input id="q2" type="text" maxlength="1" size="1">
-        <input id="q3" type="text" maxlength="1" size="1">
-        <input id="q4" type="text" maxlength="1" size="1">
-        <input id="q5" type="text" maxlength="1" size="1"style="margin-top: 56px;">
-        <input id="q6" type="text" maxlength="1" size="1">
-        <input id="q7" type="text" maxlength="1" size="1">
-    </div>
+        <div class="quadcore">
+            <input id="q1" type="text" maxlength="1" size="1">
+            <input id="q2" type="text" maxlength="1" size="1">
+            <input id="q3" type="text" maxlength="1" size="1">
+            <input id="q4" type="text" maxlength="1" size="1">
+            <input id="q5" type="text" maxlength="1" size="1" style="margin-top: 56px;">
+            <input id="q6" type="text" maxlength="1" size="1">
+            <input id="q7" type="text" maxlength="1" size="1">
+        </div>
 
-    <div class="dma">
-        <input id="dma1" type="text" maxlength="1" size="1">
-        <input id="dma2" type="text" maxlength="1" size="1">
+        <div class="dma">
+            <input id="dma1" type="text" maxlength="1" size="1">
+            <input id="dma2" type="text" maxlength="1" size="1">
 
-    </div>
+        </div>
 
-    <div class="dualcore">
-        <input id="dual1" type="text" maxlength="1" size="1">
-        <input id="dual2" type="text" maxlength="1" size="1">
-        <input id="dual3" type="text" maxlength="1" size="1">
-        <input id="dual4" type="text" maxlength="1" size="1">
-        <input id="dual5" type="text" maxlength="1" size="1">
-        <input id="dual6" type="text" maxlength="1" size="1">
-        <input id="dual7" type="text" maxlength="1" size="1"style="margin-left: 56px;">
+        <div class="dualcore">
+            <input id="dual1" type="text" maxlength="1" size="1">
+            <input id="dual2" type="text" maxlength="1" size="1">
+            <input id="dual3" type="text" maxlength="1" size="1">
+            <input id="dual4" type="text" maxlength="1" size="1">
+            <input id="dual5" type="text" maxlength="1" size="1">
+            <input id="dual6" type="text" maxlength="1" size="1">
+            <input id="dual7" type="text" maxlength="1" size="1" style="margin-left: 56px;">
+        </div>
+
+        <div class="databus">
+            <input id="databus1" type="text" maxlength="1" size="1">
+            <input id="databus2" type="text" maxlength="1" size="1">
+            <input id="databus3" type="text" maxlength="1" size="1">
+            <input id="databus4" type="text" maxlength="1" size="1">
+            <input id="databus5" type="text" maxlength="1" size="1">
+            <input id="databus6" type="text" maxlength="1" size="1" style="margin-top: 56px;">
+        </div>
+        <div class="cs">
+            <input id="cs1" type="text" maxlength="1" size="1">
+        </div>
+        <div class="i5">
+            <input id="i1" type="text" maxlength="1" size="1">
+        </div>
+        <div class="i3">
+            <input id="i2" type="text" maxlength="1" size="1">
+        </div>
     </div>
-   
-    <div class="databus">
-        <input id="databus1" type="text" maxlength="1" size="1">
-        <input id="databus2" type="text" maxlength="1" size="1">
-        <input id="databus3" type="text" maxlength="1" size="1">
-        <input id="databus4" type="text" maxlength="1" size="1">
-        <input id="databus5" type="text" maxlength="1" size="1">
-        <input id="databus6" type="text" maxlength="1" size="1" style="margin-top: 56px;">
-    </div>
-    <div class="cs">
-        <input id="cs1" type="text" maxlength="1" size="1">
-    </div>
-    <div class="i5">
-        <input  id="i1" type="text" maxlength="1" size="1">
-    </div>
-    <div class="i3">
-        <input  id="i2" type="text" maxlength="1" size="1">
-    </div>
-</div>
 
 </body>
 
@@ -138,7 +138,32 @@
 
 <script>
 
-//SE DIVIRTAM 😊
+    function func_r1() {
+        if (r1.value == 'R' || r1.value == 'r' && r2.value == 'E' || r2.value == 'e' && r3.value == 'G' || r3.value == 'g' && r4.value == 'I' || r4.value == 'i' && r5.value == 'S' || r5.value == 's' && r6.value == 'T' || r6.value == 't' && r7.value == 'R' || r7.value == 'r' && r8.value == 'A' || r8.value == 'a' && r9.value == 'D' || r9.value == 'D' && r10.value == 'O' || r10.value == 'o' && r11.value == 'R' || r11.value == 'r' && r12.value == 'E' || r12.value == 'e' && r13.value == 'S' || r13.value == 's') {
+
+           alert('Registradores')
+    
+        }
+    }
+
+    function func_e1() {
+        if (r12.value == 'E' || r12.value == 'e'  && e1.value == 'P' || e1.value == 'p' && e2.value == 'R' || e2.value == 'r' && e3.value == 'O' || e3.value == 'o' && e4.value == 'M' || e4.value == 'm') {
+
+            alert('Eprom')
+            
+        }
+        
+    }
+
+    function func_rom1() {
+
+        if (e2.value == 'R' || e2.value == 'r' && rom1.value == 'O' || rom1.value == 'o' && rom2.value == 'M' || rom2.value == 'm') {
+
+            alert('ROM')
+            
+        }
+        
+    }
 
 
 
