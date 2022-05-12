@@ -52,25 +52,24 @@
             <input id="m10" type="text" maxlength="1" size="1">
             <input id="m11" type="text" maxlength="1" size="1">
             <input id="m12" type="text" maxlength="1" size="1">
-            <input id="m13" type="text" maxlength="1" size="1">
-
+            <input id="m13" type="text" maxlength="1" size="1" onchange="func_memoriademassa()">
         </div>
 
 
         <div class="ula">
             <input id="u1" type="text" maxlength="1" size="1">
-            <input id="u2" type="text" maxlength="1" size="1">
+            <input id="u2" type="text" maxlength="1" size="1" onchange="func_ula()">
         </div>
         <div class="ram">
             <input id="ram1" type="text" maxlength="1" size="1">
-            <input id="ram2" type="text" maxlength="1" size="1">
+            <input id="ram2" type="text" maxlength="1" size="1" onchange="func_ram()">
         </div>
 
         <div class="flash">
             <input id="f1" type="text" maxlength="1" size="1">
             <input id="f2" type="text" maxlength="1" size="1">
             <input id="f3" type="text" maxlength="1" size="1" style="margin-top: 57px;">
-            <input id="f4" type="text" maxlength="1" size="1">
+            <input id="f4" type="text" maxlength="1" size="1" onchange="func_flash()">
         </div>
         <div class="adressbus">
             <input id="ad1" type="text" maxlength="1" size="1">
@@ -80,11 +79,11 @@
             <input id="ad5" type="text" maxlength="1" size="1">
             <input id="ad6" type="text" maxlength="1" size="1">
             <input id="ad7" type="text" maxlength="1" size="1">
-            <input id="ad8" type="text" maxlength="1" size="1">
+            <input id="ad8" type="text" maxlength="1" size="1" onchange="func_adressbus()">
         </div>
         <div class="cpu">
             <input id="cpu1" type="text" maxlength="1" size="1">
-            <input id="cpu2" type="text" maxlength="1" size="1">
+            <input id="cpu2" type="text" maxlength="1" size="1" onchange="func_adressbus()">
         </div>
 
         <div class="quadcore">
@@ -164,6 +163,17 @@
         }
 
     }
+    
+    function func_memoriademassa() {
+        if (m1.value == 'M' || m1.value == 'm' && m2.value == 'E' || m2.value == 'e' && m3.value == 'O' || m3.value == 'o' && m4.value == 'R' || m4.value == 'r' && m5.value == 'I' || m5.value == 'i' && m6.value == 'A' || m6.value == 'a' && m7.value == 'D' || m7.value == 'd' && m8.value == 'E' || m8.value == 'e' && m9.value == 'M' || m9.value == 'm' && m10.value == 'A' || m10.value == 'a' && m11.value == 'S' || m11.value == 's' && m12.value == 'S' || m12.value == 's' && m13.value == 'A' || m13.value == 'a') {
+
+            alert('MemoriaDeMassa')
+
+        }
+    }
+
+
+
     function func_quad() {
 
         if (q1.value == 'Q' || q1.value == 'q' && q2.value == 'U' || q2.value == 'u' && q3.value == 'A' || q3.value == 'a' && q4.value == 'D' || q4.value == 'd' && q5.value == 'O' || q5.value == 'o' && q6.value == 'R' || q6.value == 'r' && q7.value == 'E' || q7.value == 'e') {
