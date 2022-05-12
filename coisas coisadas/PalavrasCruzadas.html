@@ -94,12 +94,12 @@
             <input id="q4" type="text" maxlength="1" size="1">
             <input id="q5" type="text" maxlength="1" size="1" style="margin-top: 56px;">
             <input id="q6" type="text" maxlength="1" size="1">
-            <input id="q7" type="text" maxlength="1" size="1">
+            <input id="q7" type="text" maxlength="1" size="1" onchange="func_quad()">
         </div>
 
         <div class="dma">
             <input id="dma1" type="text" maxlength="1" size="1">
-            <input id="dma2" type="text" maxlength="1" size="1">
+            <input id="dma2" type="text" maxlength="1" size="1" onchange="func_dma()">
 
         </div>
 
@@ -110,7 +110,7 @@
             <input id="dual4" type="text" maxlength="1" size="1">
             <input id="dual5" type="text" maxlength="1" size="1">
             <input id="dual6" type="text" maxlength="1" size="1">
-            <input id="dual7" type="text" maxlength="1" size="1" style="margin-left: 56px;">
+            <input id="dual7" type="text" maxlength="1" size="1" style="margin-left: 56px;" onchange="func_dual()">
         </div>
 
         <div class="databus">
@@ -119,16 +119,16 @@
             <input id="databus3" type="text" maxlength="1" size="1">
             <input id="databus4" type="text" maxlength="1" size="1">
             <input id="databus5" type="text" maxlength="1" size="1">
-            <input id="databus6" type="text" maxlength="1" size="1" style="margin-top: 56px;">
+            <input id="databus6" type="text" maxlength="1" size="1" style="margin-top: 56px;" onchange="func_databus()">
         </div>
         <div class="cs">
-            <input id="cs1" type="text" maxlength="1" size="1">
+            <input id="cs1" type="text" maxlength="1" size="1" onchange="func_cs()">
         </div>
         <div class="i5">
-            <input id="i1" type="text" maxlength="1" size="1">
+            <input id="i1" type="text" maxlength="1" size="1" onchange="func_i5()">
         </div>
         <div class="i3">
-            <input id="i2" type="text" maxlength="1" size="1">
+            <input id="i2" type="text" maxlength="1" size="1" onchange="func_i3()">
         </div>
     </div>
 
@@ -141,18 +141,18 @@
     function func_r1() {
         if (r1.value == 'R' || r1.value == 'r' && r2.value == 'E' || r2.value == 'e' && r3.value == 'G' || r3.value == 'g' && r4.value == 'I' || r4.value == 'i' && r5.value == 'S' || r5.value == 's' && r6.value == 'T' || r6.value == 't' && r7.value == 'R' || r7.value == 'r' && r8.value == 'A' || r8.value == 'a' && r9.value == 'D' || r9.value == 'D' && r10.value == 'O' || r10.value == 'o' && r11.value == 'R' || r11.value == 'r' && r12.value == 'E' || r12.value == 'e' && r13.value == 'S' || r13.value == 's') {
 
-           alert('Registradores')
-    
+            alert('Registradores')
+
         }
     }
 
     function func_e1() {
-        if (r12.value == 'E' || r12.value == 'e'  && e1.value == 'P' || e1.value == 'p' && e2.value == 'R' || e2.value == 'r' && e3.value == 'O' || e3.value == 'o' && e4.value == 'M' || e4.value == 'm') {
+        if (r12.value == 'E' || r12.value == 'e' && e1.value == 'P' || e1.value == 'p' && e2.value == 'R' || e2.value == 'r' && e3.value == 'O' || e3.value == 'o' && e4.value == 'M' || e4.value == 'm') {
 
             alert('Eprom')
-            
+
         }
-        
+
     }
 
     function func_rom1() {
@@ -160,12 +160,73 @@
         if (e2.value == 'R' || e2.value == 'r' && rom1.value == 'O' || rom1.value == 'o' && rom2.value == 'M' || rom2.value == 'm') {
 
             alert('ROM')
-            
+
         }
-        
+
+    }
+    function func_quad() {
+
+        if (q1.value == 'Q' || q1.value == 'q' && q2.value == 'U' || q2.value == 'u' && q3.value == 'A' || q3.value == 'a' && q4.value == 'D' || q4.value == 'd' && q5.value == 'O' || q5.value == 'o' && q6.value == 'R' || q6.value == 'r' && q7.value == 'E' || q7.value == 'e') {
+
+            alert('Quadcore')
+
+        }
+
+    }
+    function func_dma() {
+
+        if (dma1.value == 'D' || dma1.value == 'd' && dma2.value == 'M' || dma2.value == 'm' && q3.value == 'A' || q3.value == 'a') {
+
+            alert('DMA')
+
+        }
+
+    }
+    function func_dual() {
+
+        if (dual1.value == 'D' || dual1.value == 'd' && dual2.value == 'U' || dual2.value == 'u' && dual3.value == 'A' || dual3.value == 'a' && dual4.value == 'L' || dual4.value == 'l' && dual5.value == 'C' || dual5.value == 'c' && dual6.value == 'O' || dual6.value == 'o' && dual7.value == 'E' || dual7.value == 'e') {
+
+            alert('Dualcore')
+
+        }
+
     }
 
+    function func_databus() {
 
+        if (databus1.value == 'D' || databus1.value == 'd' && databus2.value == 'A' || databus2.value == 'a' && databus3.value == 'T' || databus3.value == 't' && databus4.value == 'A' || databus4.value == 'a' && databus5.value == 'B' || databus5.value == 'b' && databus6.value == 'S' || databus6.value == 's') {
 
+            alert('Databus')
 
+        }
+
+    }
+
+    function func_cs() {
+
+        if (cs1.value == 'S' || cs1.value == 's' && dual5.value == 'C' || dual5.value == 'c') {
+
+            alert('CS')
+
+        }
+
+    }
+    function func_i5() {
+
+        if (i1.value == '5' && r4.value == 'I' || r4.value == 'i') {
+
+            alert('i5')
+
+        }
+
+    }
+    function func_i3() {
+
+        if (i2.value == '3') {
+
+            alert('i3')
+
+        }
+
+    }
 </script>
