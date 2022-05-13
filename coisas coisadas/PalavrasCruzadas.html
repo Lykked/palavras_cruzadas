@@ -83,7 +83,7 @@
         </div>
         <div class="cpu">
             <input id="cpu1" type="text" maxlength="1" size="1">
-            <input id="cpu2" type="text" maxlength="1" size="1" onchange="func_adressbus()">
+            <input id="cpu2" type="text" maxlength="1" size="1" onchange="func_cpu()">
         </div>
 
         <div class="quadcore">
@@ -163,7 +163,7 @@
         }
 
     }
-    
+
     function func_memoriademassa() {
         if (m1.value == 'M' || m1.value == 'm' && m2.value == 'E' || m2.value == 'e' && m3.value == 'O' || m3.value == 'o' && m4.value == 'R' || m4.value == 'r' && m5.value == 'I' || m5.value == 'i' && m6.value == 'A' || m6.value == 'a' && m7.value == 'D' || m7.value == 'd' && m8.value == 'E' || m8.value == 'e' && m9.value == 'M' || m9.value == 'm' && m10.value == 'A' || m10.value == 'a' && m11.value == 'S' || m11.value == 's' && m12.value == 'S' || m12.value == 's' && m13.value == 'A' || m13.value == 'a') {
 
@@ -172,7 +172,36 @@
         }
     }
 
+    function func_ula(params) {
+        if (u1.value == 'U' || u1.value == 'u' && u2.value == 'L' || u2.value == 'l' && m6.value == 'A' || m6.value == 'a') {
+            alert('ULA')
+        }
 
+    }
+
+    function func_ram(params) {
+        if (ram1.value == 'R' || ram1.value == 'r' && ram2.value == 'A' || ram2.value == 'a' && m9.value == 'M' || m9.value == 'm') {
+            alert('RAM')
+        }
+    }
+
+    function func_flash(params) {
+        if (f1.value == 'F' || f1.value == 'f' && f2.value == 'L' || f2.value == 'l' && m13.value == 'A' || m13.value == 'a' && f3.value == 'S' || f3.value == 's' && f4.value == 'H' || f4.value == 'h') {
+            alert(`flash`)
+        }
+    }
+
+    function func_adressbus(params) {
+        if ( m10.value == 'A' || m10.value == 'a' && ad1.value == 'D' || ad1.value == 'd' && ad2.value == 'R' || ad2.value == 'r' && ad3.value == 'E' || ad3.value == 'e' && ad4.value == 'S' || ad4.value == 's' && ad5.value == 'S' || ad5.value == 's' && ad6.value == 'B' || ad6.value == 'b' && ad7.value == 'U' || ad7.value == 'u' && ad8.value == 'S' || ad8.value == 's') {
+            alert(`adressbus`)
+        }
+    }
+
+    function func_cpu(params) {
+        if (cpu1.value == 'C' || cpu1.value == 'c'&& cpu2.value == 'P' || cpu2.value == 'p' && ad7.value == 'U' || ad7.value == 'u') {
+            alert(`cpu`)
+        }
+    }
 
     function func_quad() {
 
