@@ -9,10 +9,18 @@ box-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
 font-size: 25px;
 text-transform: uppercase;
 }
-
+.container{
+  margin: 20px;
+}
+.dicas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .registradores{
 display: flex;
 flex-direction: row;
+
 }
 
 .i5{
