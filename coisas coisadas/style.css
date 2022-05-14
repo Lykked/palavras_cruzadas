@@ -1,3 +1,120 @@
+body{
+  background-color: aliceblue;
+}
+
+
+.num1{
+position: absolute;
+margin-left: 390px;
+margin-top: 12px;
+font-size: 25px;
+}
+.num2{
+  position: absolute;
+  margin-left: 1050px;
+ margin-top: -24px;
+  font-size: 24px;
+}
+.num3{
+  position: absolute;
+  margin-left: 1010px;
+  margin-top: 120px;
+
+  font-size: 24px;
+}
+.num4{
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 230px;
+
+  font-size: 24px;
+}
+.num5{
+  position: absolute;
+  margin-left: 1279px;
+  margin-top: 70px;
+
+  font-size: 24px;
+}
+.num6{
+  position: absolute;
+  margin-left: 1439px;
+  margin-top: 70px;
+
+  font-size: 24px;
+}
+.num7{
+  position: absolute;
+  margin-left: 1669px;
+  margin-top: 70px;
+
+  font-size: 24px;
+}
+.num8{
+  position: absolute;
+  margin-left: 1500px;
+  margin-top: 190px;
+
+  font-size: 24px;
+}
+.num9{
+  position: absolute;
+  margin-left: 1550px;
+  margin-top: 610px;
+
+  font-size: 24px;
+}
+.num10{
+  position: absolute;
+  margin-left: 1105px;
+  margin-top: 405px;
+  font-size: 24px;
+}
+.num11{
+  position: absolute;
+  margin-left: 1002px;
+  margin-top: 718px;
+  font-size: 24px;
+
+}
+.num12{
+  position: absolute;
+  margin-left: 1388px;
+  margin-top: 350px;
+  font-size: 24px;
+}
+.num13{
+  position: absolute;
+  margin-left: 1220px;
+  margin-top: 190px;
+  font-size: 24px;
+}
+.num14{
+  position: absolute;
+  margin-left: 605px;
+  margin-top: -22px;
+  font-size: 24px;
+}
+.num15{
+  position: absolute;
+  margin-left: 1275px;
+  margin-top: 680px;
+  font-size: 24px;
+}
+.num16{
+  position: absolute;
+  margin-left: 1227px;
+  margin-top: 499px;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
 input{
 border-radius: 20px;
 height: 50px;
@@ -10,12 +127,26 @@ font-size: 25px;
 text-transform: uppercase;
 }
 .container{
+ padding-left: 400px;
   margin: 20px;
+  width: 50%;
+  position: relative;
 }
 .dicas{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+font-size: 16.2px;
+/* background-color: rgb(5, 5, 5); */
+margin-left: 50px;
+  width: 32%;
+margin-top: -190px;
+background-color: white;
+box-shadow: 5px 5px 7px rgb(0 0 0 / 30%);
+border-radius: 20px;
+text-align: center;
+padding: 10px;
+cursor: default;
+
 }
 .registradores{
 display: flex;
